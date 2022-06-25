@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.UserDetailActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/user5" />
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/user_avatar"
+        app:layout_constraintStart_toStartOf="@+id/user_avatar"
+        app:layout_constraintTop_toBottomOf="@id/user_avatar"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/text_view_username"
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorSubtitle"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_name"
+        app:layout_constraintStart_toStartOf="@+id/text_view_name"
+        app:layout_constraintTop_toBottomOf="@id/text_view_name"
+        tools:text="TextView" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_username"
+        app:layout_constraintStart_toStartOf="@+id/text_view_username"
+        app:layout_constraintTop_toBottomOf="@id/text_view_username"
+
+        >
+
+        <TextView
+            android:id="@+id/text_view_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_peoples"
+            tools:text="  900 Follower" />
+
+        <TextView
+            android:id="@+id/text_view_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_person_add"
+            tools:text="  450 Following" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/LinearLayout"
+        app:layout_constraintStart_toStartOf="@+id/LinearLayout"
+        app:layout_constraintTop_toBottomOf="@id/LinearLayout">
+
+        <TextView
+            android:id="@+id/text_view_repository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/git_svgrepo_com"
+            tools:text="50 Repository" />
+
+        <TextView
+            android:id="@+id/text_view_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_work"
+            tools:text=" PT. MEGA SWALAYAN" />
+
+        <TextView
+            android:id="@+id/text_view_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_location"
+            tools:text=" Bandung, Jawa Barat" />
+
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabs_view"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/LinearLayout"-->
+<!--        app:tabTextColor="@color/black" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
